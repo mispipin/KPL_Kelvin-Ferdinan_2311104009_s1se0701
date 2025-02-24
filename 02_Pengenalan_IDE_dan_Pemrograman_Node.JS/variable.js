@@ -1,5 +1,5 @@
-var name = "Kevin Jonson"
-const nim = 2311104021
+var name = "Kelvin Ferdinan"
+const nim = 2311104009
 
 console.log(name)
 console.log(nim)
@@ -12,6 +12,6 @@ console.log(`Nama saya adalah ${name}
 
    /* var name = "ayam"
 
-    let fullName = "Kevin Jonson"
+    let fullName = "Kelvin Ferdinan"
 
-    nim = 2311104021*/
+    nim = 2311104009*/
