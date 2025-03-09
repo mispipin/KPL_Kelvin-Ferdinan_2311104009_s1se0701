@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum GUI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: pink;
+        }
+
+        .container {
+            margin-top: 50px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+
+        input {
+            padding: 10px;
+            width: 200px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #e64a19;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container"> 
+        <input type="text" id="namaInput" placeholder="Masukkan Nama">
+        <button onclick="tampilkanNama()">Submit</button>
+        <p id="output"></p>
+    </div>
+
+    <script>
+        function tampilkanNama() {
+            let nama = document.getElementById("namaInput").value;
+            if (nama.trim() !== "") {
+                document.getElementById("output").innerText = "Halo " + nama;
+            } else {
+                document.getElementById("output").innerText = "Masukkan nama terlebih dahulu!";
+            }
+        }
+    </script>
+
+</body>
+</html>
